@@ -1,5 +1,12 @@
-//document.write("hello")
-//console.log("Hello");
-//console.info("Hello");
-//console.error("Hello");
-console.warn("Hello");
+var stroka = "word";
+switch (stroka) {
+  case "r":
+  console.log("r");
+    break;
+  case "b":
+  console.log("b");
+    break;
+  case "word":
+  console.log("word");
+    break;
+}
