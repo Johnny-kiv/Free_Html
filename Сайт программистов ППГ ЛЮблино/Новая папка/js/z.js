@@ -13,15 +13,19 @@ function checkForm(el){
     else if(pass != repass)
       fail="Пароли не должны совпадать.";
     else if(pass.split("$").length>1)
-      fail="Знак $ дожен быть не больше 1-го раза.";
+      fail="Символ $ в пароле дожен быть не больше 1-го раза.";
     else if(pass.split("!").length>1)
-      fail="Знак ! дожен быть не больше 2-х раза.";
+      fail="Символ ! в пароле быть не больше 2-х раза.";
     else if(pass.split("@").length>1)
-      fail="Знак @ дожен быть не больше 1-го раза.";
+      fail="Символ @ в пароле дожен быть не больше 1-го раза.";
     else if(pass.split("#").length>1)
-      fail="Знак # дожен быть не больше 1-го раза.";
+      fail="Символ # d пароле дожен быть не больше 1-го раза.";
     else if(isCyrillic(pass)==true)
       fail="Язык должен быть английским.";
+    else if(email.split("@")length==0)
+      fail="Адрес почты должен иметь символ @";
+    else if(email.split("@")length>1)
+      fail="Адрес почты должен иметь символ @ не больше 1-го";
     if (fail !=""){
       document.getElementById('error').innerHTML=fail;
       return false;
