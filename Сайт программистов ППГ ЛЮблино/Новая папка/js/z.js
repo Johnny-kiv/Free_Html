@@ -23,7 +23,7 @@ function checkForm(el){
     else if(isCyrillic(pass)==true)
       fail="Язык должен быть английским.";
     if (fail !=""){
-      alert(fail);
+      document.getElementById('error');
       return false;
     }else {
       alert("Все данные коректное.");
