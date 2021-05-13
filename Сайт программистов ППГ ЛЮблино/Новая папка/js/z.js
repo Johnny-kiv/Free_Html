@@ -1,5 +1,14 @@
 function checkForm(el){
     var name = document.getElementById('name').value;
-    console.log(name);
+    var email = document.getElementById('email').value;
+    var pass = document.getElementById('Password').value;
+    var repass = document.getElementById('RePass').value;
+    var fail="";
+    if(name==""||pass==""||email==""||repass=="")
+      fail="Заполните все поля!!!";
+    else if(name.length<=1 || name.length>50)
+      fail="Введите корекное имя!!!";
+    else if(pass<8)
+      fail="Пароль должен быть не меньше 8 символов!!!"
     return false;
 }

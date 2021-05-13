@@ -40,18 +40,18 @@
       <strong style="color:red">Внимание! Включите javascript</strong>
     </noscript>
 <main class="form-signin" onsubmit="return checkForm(this)" method="post">
-  <form id="z-form">
+  <form id="z-form" onsubmit="return checkForm(this)" method="post">
     <img class="mb-4" src="./icon/icon.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 fw-normal">Зарегистрироваться</h1>
 
     <label for="floatingInput">Логин</label>
-    <input type="text" class="form-control" id="name" placeholder="Логин">
+    <input type="text" class="form-control" name="name" id="name" placeholder="Логин">
     <label for="floatingInput">email</label>
-    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
     <label for="floatingPassword">Пароль</label>
-    <input type="password" class="form-control" id="Password" placeholder="Пароль">
+    <input type="password" class="form-control" name="pass"id="Password" placeholder="Пароль">
     <label for="floatingPassword">Проверка пароля</label>
-    <input type="password" class="form-control" id="RePass" placeholder="Проверка пароля">
+    <input type="password" class="form-control" name="repass" id="RePass" placeholder="Проверка пароля">
       <label>
         <input type="checkbox" value="remember-me"> Запомнить Меня
       </label>
