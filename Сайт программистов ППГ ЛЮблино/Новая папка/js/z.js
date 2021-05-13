@@ -22,9 +22,10 @@ function checkForm(el){
       fail="Знак # дожен быть не больше 1-го раза.";
     if (fail !=""){
       document.getElementById('error').innerHTML=fail;
-      return false;
+
     }else {
       alert("Все данные заполнены коректное.");
-      return true;
+      window.location='https://lichess.org';
     }
+    return false;
 }
