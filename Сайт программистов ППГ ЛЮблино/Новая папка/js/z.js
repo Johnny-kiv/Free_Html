@@ -1,4 +1,7 @@
-function checkForm(el){
+document.getElementById('z-form').addEventListener("submit",checkForm);
+
+function checkForm(){
+    var el=document.getElementById('z-form');
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var pass = document.getElementById('Password').value;
