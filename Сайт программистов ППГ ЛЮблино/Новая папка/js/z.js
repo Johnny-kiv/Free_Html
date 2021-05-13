@@ -1,4 +1,4 @@
 function checkForm(el){
-    console.log("text");
+    name
     return false;
 }
