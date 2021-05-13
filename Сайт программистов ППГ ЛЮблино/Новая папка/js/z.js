@@ -22,7 +22,6 @@ function checkForm(el){
       fail="Знак # дожен быть не больше 1-го раза.";
     else if(isCyrillic(pass)==true)
       fail="Язык должен быть английским.";
-    return false;
     if (fail !=""){
       alert(fail);
       return false;
