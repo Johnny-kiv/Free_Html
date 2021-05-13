@@ -7,7 +7,7 @@ function checkForm(el){
     if(name==""||pass==""||email==""||repass=="")
       fail="Заполните все поля!!!";
     else if(name.length<=1 || name.length>50)
-      fail="Введите корекное имя/";
+      fail="Введите коректное имя.";
     else if(pass<8)
       fail="Пароль должен быть не меньше 8 символов.";
     else if(pass != repass)
@@ -23,4 +23,11 @@ function checkForm(el){
     else if(isCyrillic(pass)==true)
       fail="Язык должен быть английским.";
     return false;
+    if (fail !=""){
+      alert(fail);
+      return false;
+    }else {
+      alert("Все данные коректное.");
+      return true;
+    }
 }
