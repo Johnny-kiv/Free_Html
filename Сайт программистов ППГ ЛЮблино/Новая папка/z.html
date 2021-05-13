@@ -39,7 +39,7 @@
     <noscript>
       <strong style="color:red">Внимание! Включите javascript</strong>
     </noscript>
-<main class="form-signin">
+<main class="form-signin" onsubmit="checkForm(this)">
   <form id="z-form">
     <img class="mb-4" src="./icon/icon.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 fw-normal">Зарегистрироваться</h1>
@@ -53,9 +53,10 @@
     <label for="floatingPassword">Проверка пароля</label>
     <input type="password" class="form-control" id="floatingPassword" placeholder="Проверка пароля">
       <label>
-        <input type="checkbox" value="Запомнить меня">
+        <input type="checkbox" value="remember-me"> Запомнить Меня
       </label>
-    <input name="submit" value="Готово" type="button">
+      <br>
+    <input name="submit" value="Готово" type="submit">
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
   </form>
 </main>
