@@ -1,4 +1,4 @@
 function checkForm(el){
-    name
+    var name = document.
     return false;
 }
