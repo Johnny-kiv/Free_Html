@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Программисты ППГ "Люблино"</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="./icon/icon.png" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <noscript>
+      <strong style="color:red">Внимание! Включите javascript</strong>
+    </noscript>
+<main class="form-signin" onsubmit="return checkForm(this)" method="post">
+  <form id="z-form" onsubmit="return checkForm(this)" method="post">
+    <img class="mb-4" src="./icon/icon.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 fw-normal">Зарегистрироваться</h1>
+
+    <label for="floatingInput">Логин</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="Логин">
+    <label for="floatingInput">email</label>
+    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    <label for="floatingPassword">Пароль</label>
+    <input type="password" class="form-control" name="pass"id="Password" placeholder="Пароль">
+    <label for="floatingPassword">Проверка пароля</label>
+    <input type="password" class="form-control" name="repass" id="RePass" placeholder="Проверка пароля">
+    <span id="error" style="color:red"></span>
+    <input name="submit" value="Готово" type="submit">
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
+
+<script src="js/z.js"></script>
+
+  </body>
+</html>
